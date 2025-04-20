@@ -1,0 +1,263 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 네비게이션 바 스타일 */
+.nhome_one {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.uhome_one {
+  list-style-type: none;
+}
+
+.uhome_one li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.uhome_one li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+}
+
+.uhome_one li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* 반응형 처리 - 화면 크기가 768px 이하일 때 */
+@media (max-width: 768px) {
+  .uhome_one li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .uhome_one li a {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
+
+/* 화면 크기가 480px 이하일 때 */
+@media (max-width: 480px) {
+  .nhome_one {
+    padding: 5px 0;
+  }
+
+  .uhome_one li a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* 미디어 쿼리 - 화면 크기가 768px 이하일 때 */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 20px 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.team-member {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} /*teammember 정보*/
+
+a {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.rpg-img {
+  width: 10%;
+  height: auto;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .rpg-img {
+    max-width: 500px;
+  }
+}
+
+.img-shooter {
+  width: 10%;
+  height: auto;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .img-shooter {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rpg-img {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-shooter {
+    padding: 5px 0;
+  }
+}
+
+/*shooter*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+/*shooter*/
+/* 사진에 애니메이션 추가 */
+.ima-shooter {
+  position: relative;
+  /* animation: moveImage 5s linear infinite; */
+}
+
+@keyframes moveImage {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.strategy-img {
+  position: relative;
+  animation: moveImage 5s linear infinite;
+}
+
+h1 {
+  text-align: center;
+}
